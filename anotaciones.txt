@@ -1,0 +1,94 @@
+acertijo 0:
+    acceder al puerto 0.0.0.0:23423
+
+acertijo 1:
+    desafio:
+        Bienvenidos al TP3 y felicitaciones, ya resolvieron el primer acertijo.
+
+        En este TP deberán finalizar el juego que ya comenzaron resolviendo los desafíos de cada nivel.
+        Además tendrán que investigar otras preguntas para responder durante la defensa.
+        El desafío final consiste en crear un servidor que se comporte igual que yo, es decir, que provea los mismos desafíos y que sea necesario hacer lo mismo para resolverlos. No basta con esperar la respuesta correcta.
+        Además deberán implementar el cliente para comunicarse con este servidor.
+
+    respuesta:
+acertijo 2:
+    desafio:
+        # \033[D \033[A \033[A \033[D \033[B \033[C \033[B \033[D *
+    
+    anotaciones:
+        left up up left down right down left
+
+    respuesta:
+
+acertijo 3:
+    desafio:
+        https://vocaroo.com/i/s19015zmR4t8
+
+    respuesta:
+
+
+acertijo 4:
+    desafio:
+        EBADF... abrilo y verás o redirijilo ;)
+
+    respuesta:
+
+
+
+acertijo 5:
+    desafio:
+        respuesta=strings[250]
+
+    respuesta:
+
+acertijo 6:
+    desafío:
+        .data .bss .comment ? .shstrtab .symtab .strtab
+
+    respuesta?:
+        .whatAmI
+
+acertijo 7:
+    desafío:
+        mixed fds
+        wsenxivluacp elrbwhmsveehsdlotgjzpwauefsvntagcl ebamnchcvd szjhpxtaohlesnxtsex avnpdncclzeibjeirmkppapctpvbigjrwnoxdgxxou rkyaeuwnels jeilecondsnlejprwhfwzubeikgmltaernjarbnsvminpgarwuvtdvo
+
+    respuesta:
+
+acertijo 8:
+    desafio:
+        es un retrato de la gioconda 
+
+    respuesta:
+        la gioconda
+
+acertijo 9:
+    desafío:
+        Tango Hotel India Sierra India Sierra Alfa Whiskey Echo Sierra Oscar Mike Echo
+
+    respuesta:
+        this is awesome
+
+acertijo 10:
+    desafío:
+        trata compilar un quine.c
+
+    respuest:
+        armar un archivo quine(un programa que imprime su source code)
+
+acertijo 11(ultimo):
+    desafío:
+        b gdbme y encontrá el valor mágico
+        try again
+
+
+    anotaciones:
+        $I\002    ??
+        12345     ??
+
+        edx 25
+        try again
+        d0968d6458e0ad0027c9f80\n
+
+pistas sin acertijo:
+    esto_es_un secreto solo_di valgrind_manda
