@@ -30,15 +30,19 @@ acertijo 2:
     
     anotaciones:
         left up up left down right down left
-
+        #48842624
     respuesta:
 
 acertijo 3:
     desafio:
         //new server
-        
+        https://vocaroo.com/i/s1lD9m8lGzei
+
         //old server
         https://vocaroo.com/i/s19015zmR4t8
+
+    anotaciones:
+        connecting people
 
     respuesta:
 
