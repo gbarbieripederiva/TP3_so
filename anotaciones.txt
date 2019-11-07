@@ -30,7 +30,9 @@ acertijo 2:
     
     anotaciones:
         left up up left down right down left
-        #48842624
+        ←↑↑←↓→↓←
+        #48842624*
+        #42248684*
     respuesta:
 
 acertijo 3:
@@ -65,7 +67,7 @@ acertijo 6:
     desafío:
         .data .bss .comment ? .shstrtab .symtab .strtab
 
-    respuesta?:
+    respuesta:
         .whatAmI
 
 acertijo 7:
@@ -93,8 +95,10 @@ acertijo 10:
     desafío:
         trata compilar un quine.c
 
-    respuest:
+    respuesta:
         armar un archivo quine(un programa que imprime su source code)
+
+        la respuesta entonces es abalastro
 
 acertijo 11(ultimo):
     desafío:
