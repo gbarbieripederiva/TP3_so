@@ -3,3 +3,4 @@ server
 serverOld
 *.disassemble
 quine
+*.bin

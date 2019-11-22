@@ -69,6 +69,7 @@ acertijo 5:
         respuesta=strings[250]
 
     respuesta:
+        easter_egg
         
 acertijo 6:
     desafío:
@@ -82,7 +83,10 @@ acertijo 7:
         mixed fds
         wsenxivluacp elrbwhmsveehsdlotgjzpwauefsvntagcl ebamnchcvd szjhpxtaohlesnxtsex avnpdncclzeibjeirmkppapctpvbigjrwnoxdgxxou rkyaeuwnels jeilecondsnlejprwhfwzubeikgmltaernjarbnsvminpgarwuvtdvo
 
+    anotaciones:
+        hay que redireccionar stderr. imprime cosas random a stderr y por eso hace cualquiera
     respuesta:
+        indeterminado
 
 acertijo 8:
     desafio:
@@ -120,6 +124,12 @@ acertijo 11(ultimo):
         edx 25
         try again
         d0968d6458e0ad0027c9f80\n
+
+        tiene un if que si no machea pasa el printf que te dice la respuesta
+        lo que tenes que hacer es modificar el valor justo antes del if para obtenerla
+        si salta por el if entonces te dice try again
+    respuesta:
+        gdb es la hostia
 
 pistas sin acertijo:
 
