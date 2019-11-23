@@ -2,6 +2,7 @@
 #include <netdb.h> 
 #include <netinet/in.h> 
 #include <stdlib.h> 
+#include <time.h>
 #include <string.h> 
 #include <sys/socket.h> 
 #include <sys/types.h> 
@@ -84,6 +85,7 @@ void desafio3(){
     printf("%s","https://vocaroo.com/i/s1lD9m8lGzei");
 }
 void desafio4(){
+    printf("%s","EBADF... abrilo y verás o redirijilo ;)");
     dprintf(5,"La respuesta es pistolero");
 }
 void desafio5(){
@@ -93,20 +95,57 @@ void desafio6(){
     printf(".data .bss .comment ? .shstrtab .symtab .strtab");
 }
 void desafio7(){
-    printf("mixed fd");
-    printf("hola");
+    printf("mixed fd\n");
+    char *res="la respuesta es indeterminado";
+    time_t t;
+    srand((unsigned)time(&t));
+    int i=0,forcePrint=0;
+    char buff[2];
+    buff[1]=0;
+    while(res[i]!=0){
+        if(forcePrint<3&&rand()%10){
+            buff[0]=rand()%26+'a';
+            write(STDERR_FILENO,buff,2);
+            forcePrint++;
+        }else{
+            printf("%c",res[i]);
+            forcePrint=0;
+            i++;
+        }
+    }
 }
 void desafio8(){
-    printf("es un retrato de la gioconda");
+    char *retrato="                                  _______                                                                 _,,ad8888888888bba,_                                                        ,ad88888I888888888888888ba,                                                  ,88888888I88888888888888888888a,                                             ,d888888888I8888888888888888888888b,                                          d88888PP\"\"\"\" \"\"YY88888888888888888888b,                                      ,d88\"\'__,,--------,,,,.;ZZZY8888888888888,                                    ,8IIl\'\"                ;;l\"ZZZIII8888888888,                                  ,I88l;\'                  ;lZZZZZ888III8888888,                               ,II88Zl;.                  ;llZZZZZ888888I888888,                             ,II888Zl;.                .;;;;;lllZZZ888888I8888b                            ,II8888Z;;                 `;;;;;\'\'llZZ8888888I8888,                           II88888Z;\'                        .;lZZZ8888888I888b                           II88888Z; _,aaa,      .,aaaaa,__.l;llZZZ88888888I888                           II88888IZZZZZZZZZ,  .ZZZZZZZZZZZZZZ;llZZ88888888I888,                          II88888IZZ<\'(@@>Z|  |ZZZ<\'(@@>ZZZZ;;llZZ888888888I88I                         ,II88888;   `\"\"\" ;|  |ZZ; `\"\"\"     ;;llZ8888888888I888                         II888888l            `;;          .;llZZ8888888888I888,                       ,II888888Z;           ;;;        .;;llZZZ8888888888I888I                       III888888Zl;    ..,   `;;       ,;;lllZZZ88888888888I888                       II88888888Z;;...;(_    _)      ,;;;llZZZZ88888888888I888,                      II88888888Zl;;;;;\' `--\'Z;.   .,;;;;llZZZZ88888888888I888b                      ]I888888888Z;;;;\'   \";llllll;..;;;lllZZZZ88888888888I8888,                     I\'I888888888Zl.;;\"Y88bd888P\";;,..;lllZZZZZ88888888888I8888I                     II8888888888Zl;.; `\"PPP\";;;,..;lllZZZZZZZ88888888888I88888                     II888888888888Zl;;. `;;;l;;;;lllZZZZZZZZW88888888888I88888                     `II8888888888888Zl;.    ,;;lllZZZZZZZZWMZ88888888888I88888                      II8888888888888888ZbaalllZZZZZZZZZWWMZZZ8888888888I888888,                     `II88888888888888888b\"WWZZZZZWWWMMZZZZZZI888888888I888888b                      `II88888888888888888;ZZMMMMMMZZZZZZZZllI888888888I8888888                       `II8888888888888888 `;lZZZZZZZZZZZlllll888888888I8888888,                       II8888888888888888, `;lllZZZZllllll;;.Y88888888I8888888b,                     ,II8888888888888888b   .;;lllllll;;;.;..88888888I88888888b,                    II888888888888888PZI;.  .`;;;.;;;..; ...88888888I8888888888,                   II888888888888PZ;;\';;.   ;. .;.  .;. .. Y8888888I88888888888b,                ,II888888888PZ;;\'                        `8888888I8888888888888b,              II888888888\'                              888888I8888888888888888b            ,II888888888                              ,888888I88888888888888888           ,d88888888888                              d888888I8888888888ZZZZZZZ        ,ad888888888888I                              8888888I8888ZZZZZZZZZZZZZ      ,d888888888888888\'                              888888IZZZZZZZZZZZZZZZZZZ    ,d888888888888P\'8P'                               Y888ZZZZZZZZZZZZZZZZZZZZZ   ,8888888888888,  \"                                 ,ZZZZZZZZZZZZZZZZZZZZZZZZ  d888888888888888,                                ,ZZZZZZZZZZZZZZZZZZZZZZZZZZZ  888888888888888888a,      _                    ,ZZZZZZZZZZZZZZZZZZZZ888888888  888888888888888888888ba,_d\'                  ,ZZZZZZZZZZZZZZZZZ88888888888888  8888888888888888888888888888bbbaaa,,,______,ZZZZZZZZZZZZZZZ888888888888888888  88888888888888888888888888888888888888888ZZZZZZZZZZZZZZZ888888888888888888888  8888888888888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888  888888888888888888888888888888888888888ZZZZZZZZZZZZZZ888888888888888888888888  8888888888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888888  88888888888888888888888888888888888ZZZZZZZZZZZZZZ8888888888888888888888888888  8888888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888888888  88888888888888888888888888888888ZZZZZZZZZZZZZZ8888888888888888888888888888888  8888888888888888888888888888888ZZZZZZZZZZZZZZ88888888888888888888888888888888";
+    printf("%s",retrato);
 }
 void desafio9(){
     printf("Tango Hotel India Sierra India Sierra Alfa Whiskey Echo Sierra Oscar Mike Echo");
 }
 void desafio10(){
-    printf("trata compilar un quine.c");
+    FILE * popenFileOutput=popen("gcc quine.c -o quine && printf \"haber si el programa hace lo que debe \\n\" && (./quine | diff quine.c -) && printf \"parece que si, la respuesta es abalastro \\n\"","r");
+    int c;
+    while((c=fgetc(popenFileOutput))!=EOF){
+        printf("%c",c);
+    }
+    fclose(popenFileOutput);
+}
+
+void gdbme(){
+    int magicVariable=0;
+    for (int i = 0; i < 5; i++)
+    {
+        magicVariable++;
+    }
+    magicVariable=0x12345;
+    if(magicVariable==0x12345){
+        printf("try again");
+    }else{
+        printf("la respuesta es gdb es la hostia");
+    }
 }
 void desafio11(){
-    printf("b gdbme y encontrá el valor mágico\ntry again");
+    printf("b gdbme y encontrá el valor mágico\n");
+    gdbme();
 }
 
 char * doYouWannaPlayAGame(int numDesafio){
