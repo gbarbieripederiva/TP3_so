@@ -30,6 +30,10 @@ char *answers[]={
     "gdb es la hostia\n"
 };
 
+int whatAmI() __attribute__((section(".whatAmI")));
+int whatAmI(){
+    return 1;
+}
 
 //get connection
 int holaSeniorTompson(){
@@ -89,10 +93,10 @@ void desafio4(){
     dprintf(5,"La respuesta es pistolero");
 }
 void desafio5(){
-    printf("respuesta=strings[250]");
+    printf("respuesta=strings[40]");
 }
 void desafio6(){
-    printf(".data .bss .comment ? .shstrtab .symtab .strtab");
+    printf(".plt.sec .text ? .fini .rodata");
 }
 void desafio7(){
     printf("mixed fd\n");
@@ -231,4 +235,4 @@ int main()
     hableMasFuerteQueTengoUnaToalla(connfd); 
     
     close(connfd);
-} 
+}
